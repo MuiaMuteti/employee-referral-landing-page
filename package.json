@@ -4,7 +4,7 @@
   "description": "A landing page for an employee referral website.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "postcss src/styles.css -o build/styles.css"
   },
   "repository": {
     "type": "git",
