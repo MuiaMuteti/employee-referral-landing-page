@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Referral</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="font-primary text-primary-txt">
+    <!-- navigation bar -->
+    <header>
+        <nav class="container py-6 flex flex-col gap-6 md:flex-row md:justify-between md:items-center">
+            <!-- logo, brand, menu button -->
+            <div class="flex justify-between">
+                <!-- brand -->
+                <a href="./index.html" class="flex items-center gap-2 cursor-pointer">
+                    <img src="./images/logo.svg" alt="logo" class="w-8 h-8">
+                    <p class="font-extrabold uppercase">The Colony</p>
+                </a>
+                <!-- menu button -->
+                <button id="menu" class="md:hidden">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- links -->
+            <ul id="navlinks"
+                class="hidden flex-col gap-5 md:flex md:gap-12 md:flex-row text-secondary-txt font-semibold">
+                <li><a href="" class="cursor-pointer py-2 px-2 hover:bg-secondary-txt hover:text-white">Pricing</a>
+                </li>
+                <li><a href="" class="cursor-pointer py-2 px-2 hover:bg-secondary-txt hover:text-white">About</a>
+                </li>
+                <li><a href="" class="cursor-pointer py-2 px-2 hover:bg-secondary-txt hover:text-white">Contact</a>
+                </li>
+                <li><a href=""
+                        class="cursor-pointer py-2 px-7 border border-dark-bg rounded-3xl hover:bg-secondary-txt hover:text-white">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- hero -->
+    <main class="xl:relative">
+        <div class="container py-5 xl:relative xl:z-20">
+            <!-- hero section -->
+            <div class="flex flex-col gap-16 mb-16 lg:flex-row lg:items-center">
+                <!-- hero text content -->
+                <div class="lg:flex-1">
+                    <h1 class="font-extrabold text-4xl md:text-6xl">Refer Talent.</h1>
+                    <h1 class="font-extrabold text-4xl md:text-6xl">Get Rewarded.</h1>
+                    <p class="text-secondary-txt text-xl mt-4">We connect people with their vocation and companies
+                        worldwide
+                        with suitable candidates.</p>
+                    <a href=""
+                        class="inline-block px-10 py-3 bg-primary text-white font-semibold text-xl rounded-3xl mt-8">
+                        See how it works!
+                    </a>
+                </div>
+                <!-- hero image -->
+                <div class="lg:flex-1">
+                    <!-- referrer image -->
+                    <img src="./images/referrer-img.png" alt="" class="mx-auto">
+                </div>
+            </div>
+
+            <!-- refer -->
+            <div class="hidden xl:block">
+                <!-- nearest relative positioned ancestor: hero section container div -->
+                <img src="./images/refer-img.png" alt=""
+                    class="w-36 h-36 object-cover bg-secondary rounded-full absolute bottom-3 right-1/2 -mr-10">
+
+                <!-- step card-->
+                <!-- nearest relative positioned ancestor: hero section container div -->
+                <div class="hidden xl:flex gap-4 shadow-md p-4 rounded-lg bg-white absolute -bottom-5 right-1/2 mr-20">
+                    <p class="flex-grow-0 self-end text-4xl">👍</p>
+                    <div>
+                        <p class="font-semibold mb-2">Refer</p>
+                        <p class="py-2 px-8 rounded bg-refer-bg text-refer-txt">Jake Andre</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- hired -->
+            <!-- nearest relative positioned ancestor: hero section container div -->
+            <div class="hidden xl:block absolute bottom-5 right-0">
+                <!-- step card-->
+                <div class="flex gap-4 shadow-md bg-white rounded-lg p-4">
+                    <p class="flex-grow-0 self-end text-4xl">😊</p>
+                    <div>
+                        <p class="font-semibold">Jake Andre <br> Got hired!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- reward -->
+            <div class="hidden xl:block">
+                <!-- nearest relative positioned ancestor: hero section container div -->
+                <img src="./images/rewarded-img.png" alt=""
+                    class="w-32 h-32 object-cover bg-reward rounded-full absolute top-8 right-12">
+
+                <!-- step card-->
+                <!-- nearest relative positioned ancestor: hero section container div -->
+                <div class="flex gap-4 shadow-md rounded-lg p-4 bg-white absolute left-1/2 -ml-20 top-28">
+                    <p class="flex-grow-0 self-end text-4xl">🏆</p>
+                    <div>
+                        <p class="font-semibold mb-2">Your reward</p>
+                        <p class="py-2 px-8 rounded bg-reward bg-opacity-10 text-reward">+2 leave days</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- dark background -->
+        <!-- nearest relative positioned ancestor: main element -->
+        <div class="hidden xl:block absolute bottom-0 right-0 w-1/2 h-5/6 bg-dark-bg z-0 rounded-l-lg shadow-xl"></div>
+        <!-- nearest relative positioned ancestor: main element -->
+        <div
+            class="hidden xl:block absolute -bottom-20 right-0 w-72 h-24 bg-dark-bg bg-opacity-10 z-0 rounded-bl-lg shadow-xl">
+        </div>
+    </main>
+
+    <!-- custom js -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
